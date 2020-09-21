@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Cliente</title>
+        <script src="arrayteste.js" defer></script>
+</head>
+<body>
+<h1>Faça seu Cadastro!!</h1>
+
+	<form method="POST" action="arrayteste.html" onsubmit=" return enviarDados();">
+		<table>
+			<tr><!--Nome-->
+				<td>Nome Completo: </td>
+				<td><input type="text" name="nome" id="nome"></td>
+            </tr>
+         <tr><!--E-mail-->
+				<td>E-mail: </td>
+				<td><input type="email" name="email" id="email"></td>
+			   </tr>
+         <tr><!--CPF-->
+				<td>CPF ou CNPJ: </td>
+				<td><input type="text" name="cpf" maxlength="11" id="cpf"></td>
+            </tr>
+         <tr><!--Telefone-->
+                <td>Tel: </td>
+				<td><input type="tel" name="telefone" maxlength="12" id="telefone"></td>
+            </tr>
+         <tr><!--CEP-->
+				<td>CEP: </td>
+				<td><input type="text" name="cep" maxlength="8" id="cep"></td>
+            </tr>
+			<tr> <!--Estado-->
+				<td>Estado:</td>
+				<td>
+					<select name="estado" id="estado">
+						<option value="Acre">AC</option>
+                  <option value="Alagoas">AL</option>
+                  <option value="Amapá">AP</option>
+                  <option value="Amazonas">AM</option>
+                  <option value="Bahia">BA</option>
+                  <option value="Ceará">CE</option>
+                  <option value="Espírito Santo">ES</option>
+                  <option value="Goiás">GO</option>
+                  <option value="Maranhão">MA</option>
+                  <option value="Mato Grosso">MT</option>
+                  <option value="Mato Grosso do Sul">MS</option>
+                  <option value="Minas Gerais">MG</option>
+                  <option value="Pará">PA</option>
+                  <option value="Paraíba">PB</option>
+                  <option value="Paraná">PR</option>
+                  <option value="Pernambuco">PE</option>
+                  <option value="Piauí">PI</option>
+                  <option value="Rio de Janeiro">RJ</option>
+                  <option value="Rio Grande do Norte">RN</option>
+                  <option value="Rio Grande do Sul">RS</option>
+                  <option value="Rondônia">RO</option>
+                  <option value="Roraima">RR</option>
+                  <option value="Santa Catarina">SC</option>
+                  <option value="São Paulo">SP</option>
+                  <option value="Sergipe">SE</option>
+                  <option value="Tocantins">TO</option>
+                  <option value="Destrito Federal">DF</option>
+                        
+                        
+					</select>
+				</td>
+            </tr>
+         <tr><!--Cidade-->
+				<td>Cidade: </td>
+				<td><input type="text" name="cidade" id="cidade"></td>
+            </tr>
+         <tr><!--Bairro-->
+				<td>Bairro: </td>
+				<td><input type="text" name="bairro" id="bairro"></td>
+            </tr>
+         <tr><!--Logradouro-->
+               <td>Logradouro: </td>
+               <td><input type="text" name="logradouro" id="logradouro"></td>
+            </tr>
+         <tr><!--Número-->
+				<td>Número: </td>
+				<td><input type="text" name="numero" id="numero"></td>
+            </tr>
+			<tr><!--Botão de envio-->
+				<td><input type="submit" value="Enviar Dados"></td>
+            </tr>
+         <tr><!--Botão de cadastrados-->
+            <td><input type='button' onclick='Exibirdados()' value='Cadastrados'></td>
+         </tr>
+         <tr><!--Botão excluir-->
+            <td><input type='button' onclick='Apagardados()' value='Excluir'></td>
+         </tr>
+      </table>
+
+   </form>
+
+    
+
+</body>
+</html>
